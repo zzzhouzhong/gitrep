@@ -28,3 +28,11 @@ git remote add origin git@github.com:zzzhouzhong/gitrep.git  //关联远程仓�
 git push -u origin master  //推送并绑定远程仓库
 git push origin master //推送到远程仓库
 git clone git@github.com:zzzhouzhong/zzDeGitHub.git  //克隆远程仓库至本地
+
+git branch dev //创建分支
+git checkout dev  //切换分支
+git branch //查看分支
+git merge dev  //合并指定分支到当前分支
+git branch -d dev //删除分支
+
+Test:this is in dev1
