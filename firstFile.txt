@@ -36,3 +36,4 @@ git merge dev  //合并指定分支到当前分支
 git branch -d dev //删除分支
 
 Test:this is in dev1
+Test:this is in dev1,commit 2
