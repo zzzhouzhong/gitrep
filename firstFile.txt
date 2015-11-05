@@ -19,4 +19,12 @@ git reset --hard XXXX
 git reflog
 
 git checkout --firstFile.txt //撤销工作区修改
-git reset head //撤销暂存区修改
+git reset head^ //撤销暂存区修改
+git rm firstFile.txt //删除
+
+ssh-keygen -t rsa -C "youremail@example.com" //创建sshKey
+
+git remote add origin git@github.com:zzzhouzhong/gitrep.git  //关联远程仓库
+git push -u origin master  //推送并绑定远程仓库
+git push origin master //推送到远程仓库
+git clone git@github.com:zzzhouzhong/zzDeGitHub.git
