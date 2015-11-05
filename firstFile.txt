@@ -32,8 +32,27 @@ git clone git@github.com:zzzhouzhong/zzDeGitHub.git  //克隆远程仓库至本�
 git branch dev //创建分支
 git checkout dev  //切换分支
 git branch //查看分支
-git merge dev  //合并指定分支到当前分支
-git branch -d dev //删除分支
 
+git merge dev  //合并指定分支到当前分支fast forward模式
+git merge --no-ff  dev  //普通模式合并
+git branch -d dev //删除分支
+git log --graph --pretty=oneline --abbrev-commit //图形界面
+
+git stash  //储藏
+git stash list  // 查看储藏
+git stash apply  //恢复并保留
+git stash apply  stash@{0} //恢复并保留
+git stash pop  //恢复并删除
+
+多人协作
+git remote -v
+git push origin dev
+git pull  
+git branch --set-upstream branch-name origin/branch-name //创建本地分支和远程分支的链接关系
+git push origin dev
+git checkout -b branch-name origin/branch-name //在本地创建和远程分支对应的分支
+
+git config --global alias.st status //配置别名
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 Test:this is in dev1
 Test:this is in dev1,commit 2
