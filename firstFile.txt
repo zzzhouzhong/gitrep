@@ -6,14 +6,17 @@ git config --global user.name "yourname"
 git config --global user.email "youremail"
 
 git init
-git add myFile.txt
+git add firstFile.txt
 git commit -m "commininfo"
 
 git status
-git diff
+git diff firstFile.txt
 
 git log
 git reset --hard head^
 git reset --hard head~10
 git reset --hard XXXX
 git reflog
+
+git checkout --firstFile.txt //撤销工作区修改
+git reset head //撤销暂存区修改
