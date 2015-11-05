@@ -1,2 +1,19 @@
 Git is a distributed version control system.
 Git is free software
+git shell
+
+git config --global user.name "yourname"
+git config --global user.email "youremail"
+
+git init
+git add myFile.txt
+git commit -m "commininfo"
+
+git status
+git diff
+
+git log
+git reset --hard head^
+git reset --hard head~10
+git reset --hard XXXX
+git reflog
