@@ -27,4 +27,4 @@ ssh-keygen -t rsa -C "youremail@example.com" //创建sshKey
 git remote add origin git@github.com:zzzhouzhong/gitrep.git  //关联远程仓库
 git push -u origin master  //推送并绑定远程仓库
 git push origin master //推送到远程仓库
-git clone git@github.com:zzzhouzhong/zzDeGitHub.git
+git clone git@github.com:zzzhouzhong/zzDeGitHub.git  //克隆远程仓库至本地
